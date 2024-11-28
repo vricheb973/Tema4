@@ -14,7 +14,7 @@ public class Diapositiva20 {
 		
 		int numeros[] = new int[10]; //[0,0,0,0,0,0,0,0,0,0] Inicializa a 0 por defecto
 		
-		//
+		// Utilizo un for clásico porque voy a escribir cada elemento del array
 		for(int i=0; i<numeros.length; i++) { //i-> 0 1 2 3 4 5 
 			numeros[i] = random.nextInt(inicio, fin+1);
 		}
@@ -23,6 +23,8 @@ public class Diapositiva20 {
 		
 		int suma = 0;
 		
+		// Utilizo un for extendido porque voy a leer cada elemento del array 
+		// y no necesito saber la posición de cada uno
 		for(int elem : numeros) {
 			suma = suma + elem;
 		}

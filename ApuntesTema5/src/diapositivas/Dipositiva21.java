@@ -41,7 +41,7 @@ public class Dipositiva21 {
 		if(contPositivos > 0) {
 			System.out.printf("Media positivos %.2f \n", sumaPositivos*1.0/contPositivos);
 		}
-		else if(contNegativos > 0) {
+		if(contNegativos > 0) {
 			System.out.printf("Media positivos %.2f \n", sumaNegativos*1.0/contNegativos);
 		}
 		
