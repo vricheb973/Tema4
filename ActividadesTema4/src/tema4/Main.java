@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println(Matematicas.digitosRecursivo(789));
+		System.out.println(Matematicas.digitoN(152255454, 2));
 		
 	}
 
