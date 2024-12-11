@@ -5,8 +5,14 @@ import java.util.Scanner;
 public class Actividad1 {
 
 	public static void main(String[] args) {
+		
 
-		String caracter = validarString("Dime un caracter: ", 1);
+		Scanner sc = new Scanner(System.in);
+		int entero;
+		do {
+			System.out.println("Dime un entero entre 3 y 6: ");
+			entero = sc.nextInt();
+		}while(entero < 3 || entero > 6);
 
 	}
 	
@@ -21,5 +27,30 @@ public class Actividad1 {
 		
 		return cadena;
 	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

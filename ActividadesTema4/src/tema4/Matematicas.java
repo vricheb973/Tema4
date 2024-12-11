@@ -119,5 +119,39 @@ public class Matematicas {
 		numero = numero / (int) potencia(10, digitos(numero)-1-posicion);
 		return numero%10;
 	}
+	
+	static int quitaPorDetras(int numero, int digitos) {		
+		return numero / (int) Math.pow(10, digitos);
+	}
+	
+//	static int quitaPorDelante(int numero, int digitos) {	
+//		
+//		
+//	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

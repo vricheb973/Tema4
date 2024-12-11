@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class FuncionesArrays {
 	
-	static int[] generaArrayInt(int tamano, int min, int max) {
+	public static int[] generaArrayInt(int tamano, int min, int max) {
 		int array[] = new int[tamano];
 		Random random = new Random();
 		
@@ -15,7 +15,7 @@ public class FuncionesArrays {
 		return array;
 	}
 	
-	static int maximo(int array[]) {
+	public static int maximo(int array[]) {
 		int maximo = array[0];
 		
 		for(int elem : array) {
