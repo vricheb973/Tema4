@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import tema5.FuncionesArrays;
 
-public class Actividad1 {
+public class Actividad12 {
 	
 	/*
 	 * Escribe un programa que genere 20 números enteros aleatorios entre 0 

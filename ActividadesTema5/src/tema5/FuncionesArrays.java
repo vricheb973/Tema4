@@ -1,5 +1,6 @@
 package tema5;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class FuncionesArrays {
@@ -75,16 +76,15 @@ public class FuncionesArrays {
 		return posicion;
 	}
 	
-	static int[] volteaArrayInt(int array[]) {
-		int arrayVolteado[]=new int[array.length];
-		int desdeAtras=array.length-1;
+	static void volteaArrayInt(int array[]) {
+		int copia[] = Arrays.copyOf(array, array.length);
 		
-		for(int i=0;i<array.length;i++) {
-			arrayVolteado[i]=array[desdeAtras];
-			desdeAtras--;
+		int contador = copia.length-1;
+		
+		for(int i=0; i<array.length; i++) {
+			array[i] = copia[contador];
+			contador--;
 		}
-		
-		return arrayVolteado;
 	}
 
 	static void desplazaUnoDerecha(int array[]) {
@@ -115,9 +115,28 @@ public class FuncionesArrays {
 		}
 	}
 	
+	static int cuentaEnArray(int array[], int numero) {
+		int result = 0;
+		
+		for(int elem: array) {
+			if(elem == numero) {
+				result++;
+			}
+		}
+		
+		return result;
+	}
 	
-	
-	
+	static void modificaArray(int array[], int valor, int distancia) {
+		for(int i=0; i<array.length; i++) {
+			if(array[i] > valor) {
+				array[i] += distancia;
+			}
+			else if(array[i] < valor) {
+				array[i] -= distancia;
+			}
+		}
+	}
 	
 	
 	
